@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt | Rabbit Radio</title>
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="font/MAK.css">
+    <link rel="stylesheet" href="font/MAK-bold.css">
+
+    <!-- TweenMax -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+		<div class="site-logo"><a href="index.html">portfolio</a></div>
+
+        <div class="left-radio column">
+            
+            <div class="header">
+                <p>Studentische Hilfskraft bei dem Campusradio der HS Ansbach</p>
+                <p class="absatz2">
+					Bei meiner Arbeit für das Campusradio Rabbit Radio implementierte ich den Podcast. Aktuell bin ich verantwortlich für den
+					Upload der neuen Sendungen und Beiträge. Zusätzlich gehören zu meinen Aufgaben die Pflege und Aktualisierung der Wordpress-Seite.
+                </p>
+                <p>seit 2021</p>
+            </div>
+            
+            <div class="link"><a href="https://rabbitradio.de/" target="_blank">rabbitradio.de</a></div>
+        </div>
+
+		<div class="left-radio-mobile column">
+            
+            <div class="header">
+                <p>Studentische Hilfskraft bei dem Campusradio der HS Ansbach</p>
+                <p class="absatz2">
+					Bei meiner Arbeit für das Campusradio Rabbit Radio implementierte ich den Podcast. Aktuell bin ich verantwortlich für den
+					Upload der neuen Sendungen und Beiträge. Zusätzlich gehören zu meinen Aufgaben die Pflege und Aktualisierung der Wordpress-Seite.
+                </p>
+                <p>seit 2021</p>
+            </div>
+            
+            <div class="link"><a href="https://rabbitradio.de/" target="_blank">rabbitradio.de</a></div>
+        </div>
+		
+        <div class="right column">
+            <div class="images">
+                <div class="img-01-radio img"></div>
+                <div class="img-02-radio img"></div>
+            </div>
+            <div class="header">
+                <h1 class="ml12">Studentische</h1>
+				<h1 class="ml14">Hilfskraft</h1>
+            </div>
+
+            <div class="img-nav">
+                <div class="prev"><a href="project06.html">prev</a></div>
+                <div class="next"><a href="project01.html">next</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Wrap every letter in a span
+		var textWrapper = document.querySelector(".ml12");
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>"
+			);
+			var textWrapper = document.querySelector(".ml14");
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>"
+			);
+
+			anime.timeline().add({
+				targets: ".ml12 .letter",
+				translateY: [100, 0],
+				translateZ: 0,
+				opacity: [0, 1],
+				easing: "easeOutExpo",
+				duration: 1000,
+				delay: (el, i) => 1000 + 60 * i,
+			});
+
+			anime.timeline().add({
+				targets: ".ml14 .letter",
+				translateY: [100, 0],
+				translateZ: 0,
+				opacity: [0, 1],
+				easing: "easeOutExpo",
+				duration: 1000,
+				delay: (el, i) => 1000 + 60 * i,
+			});
+
+			TweenMax.from(".left-radio", 3, {
+				left: "-50%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+
+			TweenMax.from(".header h1", 3, {
+				left: "-140%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+			TweenMax.staggerFrom(
+				".images > div",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.8,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > p",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".site-logo",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".img-nav",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+
+			
+    </script>
+</body>
+</html>
+

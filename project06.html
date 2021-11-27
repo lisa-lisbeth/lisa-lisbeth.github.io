@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt | App Konzeption</title>
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="font/MAK.css">
+	<link rel="stylesheet" href="font/MAK-bold.css">
+
+    <!-- TweenMax -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+		<div class="site-logo"><a href="index.html">portfolio</a></div>
+
+        <div class="left-app02 column">
+            
+            <div class="header">
+                <p>Studienarbeit Web Engineering</p>
+                <p class="absatz2">
+					Die Aufgabe dieser Teamarbeit war, das Konzept einer Anwendung zur Unterstützung und Verbesserung der mobilen Lehre auszuarbeiten. Wir entschieden uns dafür eine App 
+					zu entwickeln, die den Usern politische Inhalte leicht verständlich näher bringt.
+					Um dies gewährleisten zu können recherchierten wir alle Inhalte und Themen und setzten diese in einem Prototypen um, welchen wir in AdobeXD visualisierten.
+                </p>
+                <p>2020/2021</p>
+            </div>
+            
+            <div class="link"><a href="https://xd.adobe.com/view/ab80e76c-fa25-4cd1-bd18-975c37efce8d-fed3/?fullscreen" target="_blank">Zum Prototypen</a></div>
+        </div>
+
+		<div class="left-app02-mobile column">
+            
+            <div class="header">
+                <p>Studienarbeit Web Engineering</p>
+                <p class="absatz2">
+					Die Aufgabe dieser Teamarbeit war, das Konzept einer Anwendung zur Unterstützung und Verbesserung der mobilen Lehre auszuarbeiten. Wir entschieden uns dafür eine App 
+					zu entwickeln, die den Usern politische Inhalte leicht verständlich näher bringt.
+					Um dies gewährleisten zu können recherchierten wir alle Inhalte und Themen und setzten diese in einem Prototypen um, welchen wir in AdobeXD visualisierten.
+                </p>
+                <p>2020/2021</p>
+            </div>
+            
+            <div class="link"><a href="https://xd.adobe.com/view/ab80e76c-fa25-4cd1-bd18-975c37efce8d-fed3/?fullscreen" target="_blank">Zum Prototypen</a></div>
+        </div>
+		
+        <div class="right column">
+            <div class="images">
+                <div class="img-01-app02 img"></div>
+                <div class="img-02-app02 img"></div>
+            </div>
+            <div class="header">
+                <h1 class="ml12">Web Engineering</h1>
+            </div>
+
+            <div class="img-nav">
+                <div class="prev"><a href="project05.html">prev</a></div>
+                <div class="next"><a href="project07.html">next</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Wrap every letter in a span
+			var textWrapper = document.querySelector(".ml12");
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>"
+			);
+
+			anime.timeline().add({
+				targets: ".ml12 .letter",
+				translateY: [100, 0],
+				translateZ: 0,
+				opacity: [0, 1],
+				easing: "easeOutExpo",
+				duration: 1000,
+				delay: (el, i) => 1000 + 60 * i,
+			});
+
+			TweenMax.from(".left-app02", 3, {
+				left: "-50%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+
+			TweenMax.from(".header h1", 3, {
+				left: "-140%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+			TweenMax.staggerFrom(
+				".images > div",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.8,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > p",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".site-logo",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".img-nav",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+
+			
+    </script>
+</body>
+</html>
+

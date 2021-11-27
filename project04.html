@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt | Animationsvideo</title>
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="font/MAK.css">
+    <link rel="stylesheet" href="font/MAK-bold.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- TweenMax -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+		<div class="site-logo"><a href="index.html">portfolio</a></div>
+
+        <div class="left-video column">
+            
+            <div class="header">
+                <p>Studienarbeit 2D-Animationsvideo über Zigarettenmüll</p>
+                <p class="absatz2">
+					Zusätzlich zur E-Publikation erstellte ich ein passendes Social Media Paket zum Thema Umweltschutz. 
+					Dafür entschied ich mich für ein kurzes 2D-Animationsvideo, für welches ich das Programm AdobeAnimate benutzte.
+                </p>
+                <p>2021</p>
+            </div>
+            
+            
+        </div>
+
+		<div class="modal">
+			<a class="link" id="toggle">Zum Video</a>
+
+			<div class="video-container">
+				<span class="close">close</span>
+				<video src="images/contentPaket_animiertesVideo.mp4" controls></video>
+			</div>
+		</div>
+
+		<div class="left-video-mobile column">
+            
+            <div class="header">
+                <p>Studienarbeit 2D-Animationsvideo über Zigarettenmüll</p>
+                <p class="absatz2">
+					Zusätzlich zur E-Publikation erstellte ich ein passendes Social Media Paket zum Thema Umweltschutz. 
+					Dafür entschied ich mich für ein kurzes 2D-Animationsvideo, für welches ich das Programm AdobeAnimate benutzte.
+                </p>
+                <p>2021</p>
+            </div>
+            
+        </div>
+		
+        <div class="right column">
+            <div class="images">
+                <div class="img-01-video img"></div>
+                <div class="img-02-video img"></div>
+            </div>
+            <div class="header">
+                <h1 class="ml12">Animationsvideo</h1>
+            </div>
+
+            <div class="img-nav">
+                <div class="prev"><a href="project03.html">prev</a></div>
+                <div class="next"><a href="project05.html">next</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+		//video
+		$("#toggle").click(function() {
+    		$(this).toggleClass('on');
+    		$(".video-container").toggleClass("show");
+		});
+		$(".close").click(function() {
+    		$(this).toggleClass('on');
+    		$(".video-container").toggleClass("show");
+		})
+
+        // Wrap every letter in a span
+			var textWrapper = document.querySelector(".ml12");
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>"
+			);
+
+			anime.timeline().add({
+				targets: ".ml12 .letter",
+				translateY: [100, 0],
+				translateZ: 0,
+				opacity: [0, 1],
+				easing: "easeOutExpo",
+				duration: 1000,
+				delay: (el, i) => 1000 + 60 * i,
+			});
+
+			TweenMax.from(".left-video", 3, {
+				left: "-50%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+
+			TweenMax.from(".header h1", 3, {
+				left: "-140%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+			TweenMax.staggerFrom(
+				".images > div",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.8,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > p",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".site-logo",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".img-nav",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+    </script>
+</body>
+</html>
+

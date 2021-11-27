@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt | Flamingo und Dosenbier</title>
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="font/MAK.css">
+    <link rel="stylesheet" href="font/MAK-bold.css">
+
+    <!-- TweenMax -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+		<div class="site-logo"><a href="index.html">portfolio</a></div>
+
+        <div class="left-flamingo column">
+            
+            <div class="header">
+                <p>Umsetzung der Webseite von Flamingo und Dosenbier</p>
+                <p class="absatz2">
+					Die Aufgabe in unserem Team war das Design und die Implementierung des Online-Magazins Flamingo und Dosenbier. 
+					Mein Fokus lag auf dem Erstellen und dem Implementieren des eigenen Wordpress-Themes mit HTML, CSS und PHP.
+                </p>
+                <p>2021</p>
+            </div>
+            
+            <div class="link"><a href="https://flamingo-und-dosenbier.de/" target="_blank">flamingo-und-dosenbier.de</a></div>
+        </div>
+
+		<div class="left-flamingo-mobile column">
+            
+            <div class="header">
+                <p>Umsetzung der Webseite von Flamingo und Dosenbier</p>
+                <p class="absatz2">
+					Die Aufgabe in unserem Team war das Design und die Implementierung des Online-Magazins Flamingo und Dosenbier. 
+					Mein Fokus lag auf dem Erstellen und dem Implementieren des eigenen Wordpress-Themes mit HTML, CSS und PHP.
+                </p>
+                <p>2021</p>
+            </div>
+            
+            <div class="link"><a href="https://flamingo-und-dosenbier.de/" target="_blank">flamingo-und-dosenbier.de</a></div>
+        </div>
+		
+        <div class="right column">
+            <div class="images">
+                <div class="img-01-flamingo img"></div>
+                <div class="img-02-flamingo img"></div>
+            </div>
+            <div class="header">
+                <h1 class="ml12">Flamingo</h1>
+				<h1 class="ml14">und Dosenbier</h1>
+            </div>
+
+            <div class="img-nav">
+                <div class="prev"><a href="project01.html">prev</a></div>
+                <div class="next"><a href="project03.html">next</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Wrap every letter in a span
+			var textWrapper = document.querySelector(".ml12");
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>"
+			);
+			var textWrapper = document.querySelector(".ml14");
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>"
+			);
+
+			anime.timeline().add({
+				targets: ".ml12 .letter",
+				translateY: [100, 0],
+				translateZ: 0,
+				opacity: [0, 1],
+				easing: "easeOutExpo",
+				duration: 1000,
+				delay: (el, i) => 1000 + 60 * i,
+			});
+
+			anime.timeline().add({
+				targets: ".ml14 .letter",
+				translateY: [100, 0],
+				translateZ: 0,
+				opacity: [0, 1],
+				easing: "easeOutExpo",
+				duration: 1000,
+				delay: (el, i) => 1000 + 60 * i,
+			});
+
+			TweenMax.from(".left-flamingo", 3, {
+				left: "-50%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+
+			TweenMax.from(".header h1", 3, {
+				left: "-140%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+			TweenMax.staggerFrom(
+				".images > div",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.8,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > p",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".site-logo",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".img-nav",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+    </script>
+</body>
+</html>
+

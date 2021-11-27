@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt | E-Pub</title>
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="font/MAK.css">
+    <link rel="stylesheet" href="font/MAK-bold.css">
+
+    <!-- TweenMax -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+		<div class="site-logo"><a href="index.html">portfolio</a></div>
+
+        <div class="left-epub column">
+            
+            <div class="header">
+                <p>Studienarbeit E-Publishing</p>
+                <p class="absatz2">
+					Die Anforderung war das Erstellen einer interaktiven E-Publikation mit InDesign. 
+					Die Inhalte Greta Thunbergs Rede und die 17 Sustainable Development Goals, 
+					sollten dem Leser durch ein gute Informationsarchitektur  und gute Lesbarkeit auf digitalen Screens übermittelt werden.
+                </p>
+                <p>2021</p>
+            </div>
+            
+            <div class="link"><a href="https://indd.adobe.com/view/fed56b75-3a64-4d06-81b5-82e799640dff" target="_blank">Link zum E-Pub</a></div>
+        </div>
+
+		<div class="left-epub-mobile column">
+            
+            <div class="header">
+                <p>Studienarbeit E-Publishing</p>
+                <p class="absatz2">
+					Die Anforderung war das Erstellen einer interaktiven E-Publikation mit InDesign. 
+					Die Inhalte Greta Thunbergs Rede und die 17 Sustainable Development Goals, 
+					sollten dem Leser durch ein gute Informationsarchitektur  und gute Lesbarkeit auf digitalen Screens übermittelt werden.
+                </p>
+                <p>2021</p>
+            </div>
+            
+            <div class="link"><a href="https://indd.adobe.com/view/fed56b75-3a64-4d06-81b5-82e799640dff" target="_blank">Link zum E-Pub</a></div>
+        </div>
+		
+        <div class="right column">
+            <div class="images">
+                <div class="img-01-epub img"></div>
+                <div class="img-02-epub img"></div>
+            </div>
+            <div class="header">
+                <h1 class="ml12">E-Publikation</h1>
+            </div>
+
+            <div class="img-nav">
+                <div class="prev"><a href="project02.html">prev</a></div>
+                <div class="next"><a href="project04.html">next</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Wrap every letter in a span
+			var textWrapper = document.querySelector(".ml12");
+			textWrapper.innerHTML = textWrapper.textContent.replace(
+				/\S/g,
+				"<span class='letter'>$&</span>"
+			);
+
+			anime.timeline().add({
+				targets: ".ml12 .letter",
+				translateY: [100, 0],
+				translateZ: 0,
+				opacity: [0, 1],
+				easing: "easeOutExpo",
+				duration: 1000,
+				delay: (el, i) => 1000 + 60 * i,
+			});
+
+			TweenMax.from(".left-epub", 3, {
+				left: "-50%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+
+			TweenMax.from(".header h1", 3, {
+				left: "-140%",
+				ease: Expo.easeInOut,
+				delay: 3.2,
+			});
+			TweenMax.staggerFrom(
+				".images > div",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.8,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > p",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".site-logo",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".img-nav",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 5.4,
+				},
+				0.2
+			);
+
+			
+    </script>
+</body>
+</html>
+
