@@ -255,6 +255,7 @@ body {
   text-decoration: underline;
   font-family: 'Mak';
   color: #fff;
+  font-size: 1.5rem
 }
 
 .projects a:hover {
