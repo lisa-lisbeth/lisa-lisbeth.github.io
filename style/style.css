@@ -53,6 +53,8 @@ body {
 	justify-content: space-between;
 	text-transform: uppercase;
 	line-height: 100px;
+  background: #0a0a0a;
+  z-index: 1;
 }
 
 .site-menu {
