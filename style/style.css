@@ -311,28 +311,8 @@ body {
   }
   
   .about-section h3 {
-	font-family: Helvetica;
 	padding: 8px 0;
 	margin-bottom: 20px;
-	font-style: italic;
-  }
-  
-  .about-link {
-	margin: 50px 0;
-  }
-  
-  .about-link a {
-	color: #0a0a0a;
-	padding: 18px 36px;
-	border: 1px solid #0a0a0a;
-	font-size: 12px;
-	letter-spacing: 4px;
-  }
-  
-  .about-link a:hover {
-	text-decoration: none;
-	color: white;
-	background: #0a0a0a;
   }
   
   .project-section {
@@ -360,6 +340,7 @@ body {
   .project-heading h1 {
     font-family: 'Mak';
     font-size: 84px;
+    text-transform: uppercase;
   }
 
 .arrow-down {
@@ -495,7 +476,6 @@ body {
 	white-space: nowrap;
 	font-size: 3vw;
 	padding: 0.8vw 1vw;
-	font-weight: 900;
 }
 
 .marquee span {
@@ -534,7 +514,7 @@ body {
   .contact-media h1 {
 	font-size: 80px;
 	text-transform: uppercase;
-    font-family: 'Mak';
+  font-family: 'Mak';
   }
   
   .contact-media h3 {
@@ -594,5 +574,24 @@ body {
   .impressum-container {
     margin-top: 12em;
   }
+
+@media (max-width: 900px) {
+  .about-section h1 {
+    font-size: 65px;
+    }
+   .project-heading h1 {
+      font-size: 65px;
+    }
+    .contact-media h1 {
+      font-size: 65px;
+      }
+    .contact-media h3 a {
+      font-size: 20px;
+    }
+    .menu__item-link,
+    .marquee span {
+	    font-size: 5.5vw;
+    }
+}
 
 
