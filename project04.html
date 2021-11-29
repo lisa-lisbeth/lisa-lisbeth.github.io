@@ -75,6 +75,16 @@
     </div>
 
     <script>
+		//video
+		$("#toggle").click(function() {
+    		$(this).toggleClass('on');
+    		$(".video-container").toggleClass("show");
+		});
+		$(".close").click(function() {
+    		$(this).toggleClass('on');
+    		$(".video-container").toggleClass("show");
+		})
+		
         // Wrap every letter in a span
 			var textWrapper = document.querySelector(".ml12");
 			textWrapper.innerHTML = textWrapper.textContent.replace(
