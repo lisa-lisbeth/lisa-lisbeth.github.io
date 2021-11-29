@@ -22,12 +22,12 @@
         <div class="left-radio column">
             
             <div class="header">
-                <p>Studentische Hilfskraft bei dem Campusradio der HS Ansbach</p>
-                <p class="absatz2">
+                <p class="p-web">Studentische Hilfskraft bei dem Campusradio der HS Ansbach</p>
+                <p class="p-web absatz2">
 					Bei meiner Arbeit für das Campusradio Rabbit Radio implementierte ich den Podcast. Aktuell bin ich verantwortlich für den
 					Upload der neuen Sendungen und Beiträge. Zusätzlich gehören zu meinen Aufgaben die Pflege und Aktualisierung der Wordpress-Seite.
                 </p>
-                <p>seit 2021</p>
+                <p class="p-web">seit 2021</p>
             </div>
             
             <div class="link"><a href="https://rabbitradio.de/" target="_blank">rabbitradio.de</a></div>
@@ -36,12 +36,12 @@
 		<div class="left-radio-mobile column">
             
             <div class="header">
-                <p>Studentische Hilfskraft bei dem Campusradio der HS Ansbach</p>
-                <p class="absatz2">
+                <p class="p-mobile">Studentische Hilfskraft bei dem Campusradio der HS Ansbach</p>
+                <p class="p-mobile absatz2">
 					Bei meiner Arbeit für das Campusradio Rabbit Radio implementierte ich den Podcast. Aktuell bin ich verantwortlich für den
 					Upload der neuen Sendungen und Beiträge. Zusätzlich gehören zu meinen Aufgaben die Pflege und Aktualisierung der Wordpress-Seite.
                 </p>
-                <p>seit 2021</p>
+                <p class="p-mobile">seit 2021</p>
             </div>
             
             <div class="link"><a href="https://rabbitradio.de/" target="_blank">rabbitradio.de</a></div>
@@ -66,7 +66,7 @@
 
     <script>
         // Wrap every letter in a span
-		var textWrapper = document.querySelector(".ml12");
+			var textWrapper = document.querySelector(".ml12");
 			textWrapper.innerHTML = textWrapper.textContent.replace(
 				/\S/g,
 				"<span class='letter'>$&</span>"
@@ -102,7 +102,6 @@
 				ease: Expo.easeInOut,
 				delay: 3.2,
 			});
-
 			TweenMax.from(".header h1", 3, {
 				left: "-140%",
 				ease: Expo.easeInOut,
@@ -121,7 +120,19 @@
 			);
 
 			TweenMax.staggerFrom(
-				".header > p",
+				".p-mobile",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 0,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > .p-web",
 				1,
 				{
 					y: "60",
@@ -131,7 +142,7 @@
 				},
 				0.2
 			);
-
+			
 			TweenMax.staggerFrom(
 				".site-logo",
 				1,
@@ -155,8 +166,6 @@
 				},
 				0.2
 			);
-
-			
     </script>
 </body>
 </html>

@@ -22,13 +22,13 @@
         <div class="left-app02 column">
             
             <div class="header">
-                <p>Studienarbeit Web Engineering</p>
-                <p class="absatz2">
+                <p class="p-web">Studienarbeit Web Engineering</p>
+                <p class="p-web absatz2">
 					Die Aufgabe dieser Teamarbeit war, das Konzept einer Anwendung zur Unterstützung und Verbesserung der mobilen Lehre auszuarbeiten. Wir entschieden uns dafür eine App 
 					zu entwickeln, die den Usern politische Inhalte leicht verständlich näher bringt.
 					Um dies gewährleisten zu können recherchierten wir alle Inhalte und Themen und setzten diese in einem Prototypen um, welchen wir in AdobeXD visualisierten.
                 </p>
-                <p>2020/2021</p>
+                <p class="p-web">2020/2021</p>
             </div>
             
             <div class="link"><a href="https://xd.adobe.com/view/ab80e76c-fa25-4cd1-bd18-975c37efce8d-fed3/?fullscreen" target="_blank">Zum Prototypen</a></div>
@@ -37,13 +37,13 @@
 		<div class="left-app02-mobile column">
             
             <div class="header">
-                <p>Studienarbeit Web Engineering</p>
-                <p class="absatz2">
+                <p class="p-mobile">Studienarbeit Web Engineering</p>
+                <p class="p-mobile absatz2">
 					Die Aufgabe dieser Teamarbeit war, das Konzept einer Anwendung zur Unterstützung und Verbesserung der mobilen Lehre auszuarbeiten. Wir entschieden uns dafür eine App 
 					zu entwickeln, die den Usern politische Inhalte leicht verständlich näher bringt.
 					Um dies gewährleisten zu können recherchierten wir alle Inhalte und Themen und setzten diese in einem Prototypen um, welchen wir in AdobeXD visualisierten.
                 </p>
-                <p>2020/2021</p>
+                <p class="p-mobile">2020/2021</p>
             </div>
             
             <div class="link"><a href="https://xd.adobe.com/view/ab80e76c-fa25-4cd1-bd18-975c37efce8d-fed3/?fullscreen" target="_blank">Zum Prototypen</a></div>
@@ -88,7 +88,6 @@
 				ease: Expo.easeInOut,
 				delay: 3.2,
 			});
-
 			TweenMax.from(".header h1", 3, {
 				left: "-140%",
 				ease: Expo.easeInOut,
@@ -107,7 +106,19 @@
 			);
 
 			TweenMax.staggerFrom(
-				".header > p",
+				".p-mobile",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 0,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > .p-web",
 				1,
 				{
 					y: "60",
@@ -117,7 +128,7 @@
 				},
 				0.2
 			);
-
+			
 			TweenMax.staggerFrom(
 				".site-logo",
 				1,
@@ -141,8 +152,6 @@
 				},
 				0.2
 			);
-
-			
     </script>
 </body>
 </html>

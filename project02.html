@@ -22,12 +22,12 @@
         <div class="left-flamingo column">
             
             <div class="header">
-                <p>Umsetzung der Webseite von Flamingo und Dosenbier</p>
-                <p class="absatz2">
+                <p class="p-web">Umsetzung der Webseite von Flamingo und Dosenbier</p>
+                <p class="p-web absatz2">
 					Die Aufgabe in unserem Team war das Design und die Implementierung des Online-Magazins Flamingo und Dosenbier. 
 					Mein Fokus lag auf dem Erstellen und dem Implementieren des eigenen Wordpress-Themes mit HTML, CSS und PHP.
                 </p>
-                <p>2021</p>
+                <p class="p-web">2021</p>
             </div>
             
             <div class="link"><a href="https://flamingo-und-dosenbier.de/" target="_blank">flamingo-und-dosenbier.de</a></div>
@@ -36,12 +36,12 @@
 		<div class="left-flamingo-mobile column">
             
             <div class="header">
-                <p>Umsetzung der Webseite von Flamingo und Dosenbier</p>
-                <p class="absatz2">
+                <p class="p-mobile">Umsetzung der Webseite von Flamingo und Dosenbier</p>
+                <p class="p-mobile absatz2">
 					Die Aufgabe in unserem Team war das Design und die Implementierung des Online-Magazins Flamingo und Dosenbier. 
 					Mein Fokus lag auf dem Erstellen und dem Implementieren des eigenen Wordpress-Themes mit HTML, CSS und PHP.
                 </p>
-                <p>2021</p>
+                <p class="p-mobile">2021</p>
             </div>
             
             <div class="link"><a href="https://flamingo-und-dosenbier.de/" target="_blank">flamingo-und-dosenbier.de</a></div>
@@ -102,7 +102,6 @@
 				ease: Expo.easeInOut,
 				delay: 3.2,
 			});
-
 			TweenMax.from(".header h1", 3, {
 				left: "-140%",
 				ease: Expo.easeInOut,
@@ -121,7 +120,19 @@
 			);
 
 			TweenMax.staggerFrom(
-				".header > p",
+				".p-mobile",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 0,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > .p-web",
 				1,
 				{
 					y: "60",
@@ -131,7 +142,7 @@
 				},
 				0.2
 			);
-
+			
 			TweenMax.staggerFrom(
 				".site-logo",
 				1,

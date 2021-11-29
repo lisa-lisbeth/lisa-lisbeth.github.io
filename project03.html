@@ -22,13 +22,13 @@
         <div class="left-epub column">
             
             <div class="header">
-                <p>Studienarbeit E-Publishing</p>
-                <p class="absatz2">
+                <p class="p-web">Studienarbeit E-Publishing</p>
+                <p class="p-web absatz2">
 					Die Anforderung war das Erstellen einer interaktiven E-Publikation mit InDesign. 
 					Die Inhalte Greta Thunbergs Rede und die 17 Sustainable Development Goals, 
 					sollten dem Leser durch ein gute Informationsarchitektur  und gute Lesbarkeit auf digitalen Screens übermittelt werden.
                 </p>
-                <p>2021</p>
+                <p class="p-web">2021</p>
             </div>
             
             <div class="link"><a href="https://indd.adobe.com/view/fed56b75-3a64-4d06-81b5-82e799640dff" target="_blank">Link zum E-Pub</a></div>
@@ -37,13 +37,13 @@
 		<div class="left-epub-mobile column">
             
             <div class="header">
-                <p>Studienarbeit E-Publishing</p>
-                <p class="absatz2">
+                <p class="p-mobile">Studienarbeit E-Publishing</p>
+                <p class="p-mobile absatz2">
 					Die Anforderung war das Erstellen einer interaktiven E-Publikation mit InDesign. 
 					Die Inhalte Greta Thunbergs Rede und die 17 Sustainable Development Goals, 
 					sollten dem Leser durch ein gute Informationsarchitektur  und gute Lesbarkeit auf digitalen Screens übermittelt werden.
                 </p>
-                <p>2021</p>
+                <p class="p-mobile">2021</p>
             </div>
             
             <div class="link"><a href="https://indd.adobe.com/view/fed56b75-3a64-4d06-81b5-82e799640dff" target="_blank">Link zum E-Pub</a></div>
@@ -88,7 +88,6 @@
 				ease: Expo.easeInOut,
 				delay: 3.2,
 			});
-
 			TweenMax.from(".header h1", 3, {
 				left: "-140%",
 				ease: Expo.easeInOut,
@@ -107,7 +106,19 @@
 			);
 
 			TweenMax.staggerFrom(
-				".header > p",
+				".p-mobile",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 0,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > .p-web",
 				1,
 				{
 					y: "60",
@@ -117,7 +128,7 @@
 				},
 				0.2
 			);
-
+			
 			TweenMax.staggerFrom(
 				".site-logo",
 				1,
@@ -141,8 +152,6 @@
 				},
 				0.2
 			);
-
-			
     </script>
 </body>
 </html>

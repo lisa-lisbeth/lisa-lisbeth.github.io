@@ -25,12 +25,12 @@
         <div class="left-video column">
             
             <div class="header">
-                <p>Studienarbeit 2D-Animationsvideo über Zigarettenmüll</p>
-                <p class="absatz2">
+                <p class="p-web">Studienarbeit 2D-Animationsvideo über Zigarettenmüll</p>
+                <p class="p-web absatz2">
 					Zusätzlich zur E-Publikation erstellte ich ein passendes Social Media Paket zum Thema Umweltschutz. 
 					Dafür entschied ich mich für ein kurzes 2D-Animationsvideo, für welches ich das Programm AdobeAnimate benutzte.
                 </p>
-                <p>2021</p>
+                <p class="p-web">2021</p>
             </div>
             
             
@@ -48,12 +48,12 @@
 		<div class="left-video-mobile column">
             
             <div class="header">
-                <p>Studienarbeit 2D-Animationsvideo über Zigarettenmüll</p>
-                <p class="absatz2">
+                <p class="p-mobile">Studienarbeit 2D-Animationsvideo über Zigarettenmüll</p>
+                <p class="p-mobile absatz2">
 					Zusätzlich zur E-Publikation erstellte ich ein passendes Social Media Paket zum Thema Umweltschutz. 
 					Dafür entschied ich mich für ein kurzes 2D-Animationsvideo, für welches ich das Programm AdobeAnimate benutzte.
                 </p>
-                <p>2021</p>
+                <p class="p-mobile">2021</p>
             </div>
             
         </div>
@@ -74,17 +74,7 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-		//video
-		$("#toggle").click(function() {
-    		$(this).toggleClass('on');
-    		$(".video-container").toggleClass("show");
-		});
-		$(".close").click(function() {
-    		$(this).toggleClass('on');
-    		$(".video-container").toggleClass("show");
-		})
-
+    <script>
         // Wrap every letter in a span
 			var textWrapper = document.querySelector(".ml12");
 			textWrapper.innerHTML = textWrapper.textContent.replace(
@@ -107,7 +97,6 @@
 				ease: Expo.easeInOut,
 				delay: 3.2,
 			});
-
 			TweenMax.from(".header h1", 3, {
 				left: "-140%",
 				ease: Expo.easeInOut,
@@ -126,7 +115,19 @@
 			);
 
 			TweenMax.staggerFrom(
-				".header > p",
+				".p-mobile",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 0,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > .p-web",
 				1,
 				{
 					y: "60",
@@ -136,7 +137,7 @@
 				},
 				0.2
 			);
-
+			
 			TweenMax.staggerFrom(
 				".site-logo",
 				1,
