@@ -35,12 +35,12 @@
 		<div class="left-nk-mobile column">
             
             <div class="header">
-                <p >Umsetzung einer Webseite im Auftrag von NK-Factory</p>
-                <p class="absatz2">
+                <p class="p-mobile">Umsetzung einer Webseite im Auftrag von NK-Factory</p>
+                <p class="p-mobile absatz2">
                     Bei der Seite war ich für die Konzeption, das Design und die Umsetzung der Webseite für das Kosmetikstudio 
 					NK-Factory zuständig.
                 </p>
-                <p>2020</p>
+                <p class="p-mobile">2020</p>
             </div>
             
             <div class="link"><a href="https://nk-factory.de/" target="_blank">nk-factory.de</a></div>
@@ -110,6 +110,18 @@
 					opacity: 0,
 					ease: Power2.easeOut,
 					delay: 5,
+				},
+				0.2
+			);
+
+			TweenMax.staggerFrom(
+				".header > .p-mobile",
+				1,
+				{
+					y: "60",
+					opacity: 0,
+					ease: Power2.easeOut,
+					delay: 0.1,
 				},
 				0.2
 			);
