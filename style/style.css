@@ -170,8 +170,7 @@ body {
     #toggle {
           visibility: visible;
           opacity: 1;
-          margin-top: 2px;
-          margin-right: 4px;
+          line-height: 100px;
     }
 
     #menu a {
