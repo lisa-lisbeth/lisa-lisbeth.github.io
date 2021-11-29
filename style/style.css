@@ -42,6 +42,7 @@ body {
 	font-size: 24px;
 	line-height: 100px;
 	text-transform: uppercase;
+  z-index: 2;
 }
 
 .navigation {
@@ -195,12 +196,12 @@ body {
 .wrapper-img {
     overflow: hidden;
     position: relative;
-    top: 15vh;
+    top: 0;
     display: flex;
     left: 50%;
     transform: translate(-50%, 0);
     width: 30%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .img-container {
