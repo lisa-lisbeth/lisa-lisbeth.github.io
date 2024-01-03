@@ -711,12 +711,8 @@ body {
   padding: 2em;
 }
 
-
-
-
-
 .items {
-  position: absolute;
+  position: relative;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -741,7 +737,7 @@ body {
 }
 
 .project-overlay {
-  position: absolute;
+  position: relative;
   bottom: -1200px;
   right: 0;
   width: 70%;
