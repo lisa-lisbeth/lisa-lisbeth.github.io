@@ -134,6 +134,69 @@
             </div>
           </div>
 
+          <!--projekte-start-->
+          <div class="overlay">
+            <div class="overlay-header">
+              <div class="col">
+                <h1 id="item-name">Item 1</h1>
+                <p id="item-category">Item Category</p>
+              </div>
+              <div class="col">
+                <p id="close-btn">Close</p>
+              </div>
+            </div>
+            <div class="item-details">
+              <p>
+                <a id="item-link" href="#"
+                  ><i class="ph-bold ph-arrow-up-right"></i> View Site</a
+                >
+              </p>
+              <p id="item-copy">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores qui
+                ea, impedit vero provident dolorem distinctio obcaecati quam. Sequi,
+                sed!
+              </p>
+            </div>
+            <div class="img-container">
+              <img id="item-img" src="./img-1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="container">
+            <div class="items">
+              <div class="item">
+                <div class="item-index">01</div>
+                <div class="item-name">Johanna Klug</div>
+                <div class="item-year">Webdesign</div>
+              </div>
+              <div class="item">
+                <div class="item-index">02</div>
+                <div class="item-name">Brasse Trinkvergnügen</div>
+                <div class="item-year">Grafikdesign</div>
+              </div>
+              <div class="item">
+                <div class="item-index">03</div>
+                <div class="item-name">Rabbit Raddio</div>
+                <div class="item-year">Webdesign</div>
+              </div>
+              <div class="item">
+                <div class="item-index">04</div>
+                <div class="item-name">Interactive Design</div>
+                <div class="item-year">UI/UX</div>
+              </div>
+              <div class="item">
+                <div class="item-index">05</div>
+                <div class="item-name">E-Publikation</div>
+                <div class="item-year">Grafikdesign</div>
+              </div>
+              <div class="item">
+                <div class="item-index">06</div>
+                <div class="item-name">Flamingo und Dosenbier</div>
+                <div class="item-year">Webdesign</div>
+              </div>
+            </div>
+          </div>
+          <!--projekte-ende-->
+<!--
           <nav class="menu">
             <div class="menu__item wow fadeInUp" data-wow-delay="0.2s">
               <a class="menu__item-link" href="https://johanna-klug.de/" target="_blank">/ Johanna Klug</a>
@@ -249,7 +312,7 @@
               </div>
             </div>
           </nav>
-
+-->
         </div>
       </section>
 
@@ -391,6 +454,62 @@
 
 
   </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script type="module">
+
+    import { data } from "./data.js";
+    
+    const overlay = document.querySelector(".overlay");
+    const closeBtn = document.querySelector("#close-btn");
+    
+    const tl = gsap.timeline({ paused: true, overwrite: "auto" });
+    tl.to(overlay, {
+      duration: 0.5,
+      bottom: "0px",
+      rotation: 0,
+      transformOrigin: "bottom center",
+      ease: "power2.out",
+    });
+    const items = document.querySelectorAll(".item");
+    items.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        tl.play();
+    
+        updateOverlay(data[index]);
+      });
+    });
+    
+    closeBtn.addEventListener("click", () => {
+      tl.reverse();
+    });
+    
+    function updateOverlay(dataItem) {
+      const itemName =
+        document.querySelector("#item-category").previousElementSibling;
+      const itemCategory = document.querySelector("#item-category");
+      const itemLink = document.querySelector("#item-link");
+      const itemCopy = document.querySelector("#item-copy");
+      const itemImg = document.querySelector("#item-img");
+    
+      itemName.textContent = dataItem.itemName;
+      itemCategory.textContent = dataItem.itemCategory;
+      itemLink.href = dataItem.itemLink;
+      itemCopy.textContent = dataItem.itemCopy;
+      itemImg.src = dataItem.itemImg;
+    }
+    
+    document.addEventListener("click", (e) => {
+      if (!overlay.contains(e.target) && !isItem(e.target)) {
+        tl.reverse();
+      }
+    });
+    
+    function isItem(target) {
+      return target.closest(".item");
+    }
+    
+        </script>
 </body>
 
 </html>
