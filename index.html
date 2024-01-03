@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="font/MAK.css">
+  <link rel="stylesheet" href="font/MAK-bold.css">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- SCROLL REVEAL ANIMATIONS -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css" />
+  <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
+  <!-- TweenMax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="hero-animation-wrapper">
+    <!-- loader -->
+    <div class="wrapper">
+      <div class="loader"></div>
+    </div>
+    <div class="hero-wrapper">
+      <div class="site-logo"><a href="https://lisa-lisbeth.github.io/">Portfolio</a></div>
+      <div class="navigation">
+        <div class="site-info">Webdesign | Grafikdesign | UI/UX</div>
+        <div class="site-menu">
+          <div class="menu-item"><a href="#about-link">Über mich</a></div>
+          <div class="menu-item"><a href="/projekte.html">Projekte</a></div>
+          <div class="menu-item"><a href="#contact-link">Kontakt</a></div>
+        </div>
+        <div id="toggle">
+          menu
+        </div>
+      </div>
+
+      <div id="resize">
+        <div class="close-btn">close</div>
+
+        <ul id="menu">
+          <li class="menu-item"><a href="#about-link">Über mich</a></li>
+          <li class="menu-item"><a href="/projekte.html">Projekte</a></li>
+          <li class="menu-item"><a href="#contact-link">Kontakt</a></li>
+          <div class="site-info-mobile">Webdesign | Grafikdesign | UI/UX</div>
+        </ul>
+      </div>
+
+      <!-- hero-image -->
+      <div class="wrapper-img">
+        <div class="box"></div>
+        <div class="img-container">
+          <img src="images/bewerbungsbild02.jpg" class="hero-image">
+        </div>
+      </div>
+
+      <!-- header -->
+      <div class="header">
+        <h1 class="header-1">Lisa</h1>
+        <h1 class="header-2">Beyer</h1>
+      </div>
+
+      <!-- hero-container -->
+      <div class="hero-container">
+        <div class="projects"><a href="projekte.html">Zu allen Projekten →</a></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="main-wrapper">
+    <div class="main-container">
+
+      <section class="about-section">
+        <div class="container">
+          <div class="row">
+            <div class="about-heading col-lg-6">
+              <h2 class="wow fadeInUp" data-wow-delay="0.2s" id="about-link">Über mich</h2>
+            </div>
+            <div class="about-content col-lg-6">
+              <h3 class="wow fadeInUp" data-wow-delay="0.3s">
+                Hi, ich bin Lisa, 25 Jahre alt.
+              </h3>
+              <p class="wow fadeInUp" data-wow-delay="0.4s">
+                Seit April 2023 bin ich mit meinem Bachelorstudium Multimedia und Kommunikation mit den Schwerpunkten
+                Mediendesign und Medieninformatik fertig.
+              </p>
+              <p class="wow fadeInUp" data-wow-delay="0.5s">
+                Das Studium hat mein Interesse an Webdesign, Grafikdesign und UI/UX-Design geweckt. Durch verschiedene
+                Projekte und Aufträge konnte ich bereits Praxiserfahrung sammeln. Im Oktober 2022 habe ich mein
+                Kleingewerbe angemeldet und konnte mich durch Aufträge in diesen Bereichen weiterentwickeln.
+                Um einen Einblick in meine Arbeiten zu erhalten, schau Dich doch gerne auf meiner Seite um.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project">
+
+        <div class="project-container">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+
+                <div class="arrow-down">
+                  <div class="img-arrow-down wow fadeInUp" data-wow-delay="0.2s"></div>
+                </div>
+
+              </div>
+              <div class="project-heading col-lg-6">
+                <h2 class="wow fadeInUp" data-wow-delay="0.3s" id="project-link">Projekte</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">
+                  Arbeitsproben von Aufträgen, Einzelstudienarbeiten und Gruppenprojekten im Bereich Webdesign, UI/UX
+                  und Grafikdesign.
+                </p>
+                <h3 class="wow fadeInUp project-txt-btn" data-wow-delay="0.4s">
+                  <a href="projekte.html">Mehr Infos zu allen Projekten findest Du hier →</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <nav class="menu">
+            <div class="menu__item wow fadeInUp" data-wow-delay="0.2s">
+              <a class="menu__item-link" href="https://johanna-klug.de/" target="_blank">/ Johanna Klug</a>
+              <img class="menu__item-img" src="johanna-klug-mockup-min.png" />
+              <div class="marquee">
+                <div class="marquee__inner">
+                  <span>Johanna Klug</span>
+                  <span>Johanna Klug</span>
+                  <span>Johanna Klug</span>
+                  <span>Johanna Klug</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="menu__item wow fadeInUp" data-wow-delay="0.4s">
+              <a class="menu__item-link"
+                href="https://assets.adobe.com/id/urn:aaid:sc:US:44229ee7-07c0-46aa-963a-5a5c28897387?view=published"
+                target="_blank">/
+                Brasse
+                Trinkvergnügen</a>
+              <img class="menu__item-img" src="brasse-karte-mockup-min.jpg" />
+              <div class="marquee">
+                <div class="marquee__inner">
+                  <span>Brasse Trinkvergnügen</span>
+                  <span>Brasse Trinkvergnügen</span>
+                  <span>Brasse Trinkvergnügen</span>
+                  <span>Brasse Trinkvergnügen</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="menu__item wow fadeInUp" data-wow-delay="0.6s">
+              <a class="menu__item-link" href="https://rabbitradio.de/" target="_blank">/ Bachelorarbeit</a>
+              <img class="menu__item-img" src="rabbit-radio-mockup-min.png" />
+              <div class="marquee">
+                <div class="marquee__inner">
+                  <span>Bachelorarbeit</span>
+                  <span>Bachelorarbeit</span>
+                  <span>Bachelorarbeit</span>
+                  <span>Bachelorarbeit</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="menu__item wow fadeInUp" data-wow-delay="0.8s">
+              <a class="menu__item-link"
+                href="https://xd.adobe.com/view/72a3965e-694a-4708-865b-8a63b8a6f71d-27f0/screen/f0852cc4-a9f8-4165-becf-753f35930306"
+                target="_blank">/
+                Interactive Design</a>
+              <img class="menu__item-img" src="pilzfreunde-app-mockup-min.jpg" />
+              <div class="marquee">
+                <div class="marquee__inner">
+                  <span>Interactive Design</span>
+                  <span>Interactive Design</span>
+                  <span>Interactive Design</span>
+                  <span>Interactive Design</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="menu__item wow fadeInUp" data-wow-delay="1s">
+              <a class="menu__item-link" href="https://indd.adobe.com/view/fed56b75-3a64-4d06-81b5-82e799640dff"
+                target="_blank">/
+                E-Publikation</a>
+              <img class="menu__item-img" src="e-pub-mockup-min.jpg" />
+              <div class="marquee">
+                <div class="marquee__inner" aria-hidden="true">
+                  <span>E-Publikation</span>
+                  <span>E-Publikation</span>
+                  <span>E-Publikation</span>
+                  <span>E-Publikation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="menu__item wow fadeInUp" data-wow-delay="1s">
+              <a class="menu__item-link" href="images/contentPaket_animiertesVideo.mp4" target="_blank">/
+                Animationsvideo</a>
+              <img class="menu__item-img" src="animationsvideo-mockup-min.jpg" />
+              <div class="marquee">
+                <div class="marquee__inner" aria-hidden="true">
+                  <span>Animationsvideo</span>
+                  <span>Animationsvideo</span>
+                  <span>Animationsvideo</span>
+                  <span>Animationsvideo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="menu__item wow fadeInUp" data-wow-delay="1s">
+              <a class="menu__item-link" href="https://flamingo-und-dosenbier.de/" target="_blank">/ Flamingo und
+                Dosenbier</a>
+              <img class="menu__item-img" src="flamingo-und-dosenbier-mockup-min.png" />
+              <div class="marquee">
+                <div class="marquee__inner" aria-hidden="true">
+                  <span>Flamingo und Dosenbier</span>
+                  <span>Flamingo und Dosenbier</span>
+                  <span>Flamingo und Dosenbier</span>
+                  <span>Flamingo und Dosenbier</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </section>
+
+      <section class="contact-media">
+        <div class="container">
+          <div class="row">
+            <div class="sm-heading col-lg-6">
+              <h2 class="wow fadeInUp" data-wow-delay="0.2s" id="contact-link">Kontakt</h2>
+            </div>
+            <div class="sm-content col-lg-6">
+              <h3 class="wow fadeInUp" data-wow-delay="0.4s">
+                <a href="mailto:lisa.beyer98@googlemail.com">lisa.beyer98@googlemail.com</a>
+              </h3>
+              <p class="wow fadeInUp" data-wow-delay="0.5s">
+                Du kannst mir gerne Fragen, Anliegen, Feedback oder Sonstiges per Mail zukommen lassen.
+              </p>
+              <p class="wow fadeInUp" data-wow-delay="0.6s">
+                Ich freue mich sehr von Dir zu hören.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12 text-left">
+            <div class="contact-icons">
+              <ul>
+                <li class="wow fadeInUp" data-wow-delay="0.7s">
+                  <a href="datenschutz.html">Datenschutz</a>
+                </li>
+                <li class="wow fadeInUp" data-wow-delay="0.7s">&</li>
+                <li class="wow fadeInUp" data-wow-delay="0.8s">
+                  <a href="impressum.html">Impressum</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script type="text/javascript">
+    // navigation
+    $("#toggle").click(function () {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+    });
+
+    $("#resize ul li a").click(function () {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+    });
+
+    $(".close-btn").click(function () {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+    });
+
+    new WOW().init();
+
+
+    var textWrapper = document.querySelector('.header-1');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline()
+      .add({
+        targets: '.header-1 .letter',
+        translateY: [200, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 2000 + 50 * i
+      });
+
+    var textWrapper = document.querySelector('.header-2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline()
+      .add({
+        targets: '.header-2 .letter',
+        translateY: [200, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 2000 + 50 * i
+      });
+
+    TweenMax.to(".wrapper", 2, {
+      top: "-200%",
+      ease: Expo.easeInOut,
+      delay: 4,
+    });
+
+    var tl = new TimelineMax();
+
+    tl.from(".loader", 1.6, {
+      scaleY: "0%",
+      y: 80,
+      ease: Expo.easeInOut,
+      delay: 1,
+      transformOrigin: "50% 100%"
+    });
+
+    tl.to(".loader", 1.6, {
+      height: "20vh",
+      scaleY: "0%",
+      ease: Expo.easeInOut,
+      transformOrigin: "0% -100%"
+    });
+
+    TweenMax.to(".box", 2.4, {
+      y: "-100%",
+      ease: Expo.easeInOut,
+      delay: 3.8,
+    });
+
+    var tl = new TweenMax.staggerFrom(".navigation > div", 2, {
+      opacity: 0,
+      y: 30,
+      ease: Expo.easeInOut,
+      delay: 4.2
+    }, 0.1);
+
+    var tl = new TweenMax.staggerFrom(".site-logo", 2, {
+      opacity: 0,
+      y: 30,
+      ease: Expo.easeInOut,
+      delay: 4.4
+    }, 0.1);
+
+    var tl = new TweenMax.staggerFrom(".hero-container > div", 2, {
+      opacity: 0,
+      y: 30,
+      ease: Expo.easeInOut,
+      delay: 4.2
+    }, 0.1);
+
+
+  </script>
+</body>
+
+</html>
