@@ -135,14 +135,14 @@
           </div>
 
           <!--projekte-start-->
-          <div class="overlay">
-            <div class="overlay-header">
-              <div class="col">
+          <div class="project-overlay">
+            <div class="project-overlay-header">
+              <div class="project-col">
                 <h2 class="project-h2" id="item-name">Item 1</h2>
                 <p id="item-category">Item Category</p>
               </div>
-              <div class="col">
-                <p id="close-btn">Close</p>
+              <div class="project-col">
+                <p id="project-close-btn">Close</p>
               </div>
             </div>
             <div class="item-details">
@@ -161,7 +161,7 @@
               <img id="item-img" src="./img-1.jpg" alt="" />
             </div>
           </div>
-          <div class="container">
+          <div class="project-container">
             <div class="items">
               <div class="item">
                 <div class="item-index">01</div>
@@ -460,8 +460,8 @@
 
     import { data } from "./data.js";
     
-    const overlay = document.querySelector(".overlay");
-    const closeBtn = document.querySelector("#close-btn");
+    const overlay = document.querySelector(".project-overlay");
+    const closeBtn = document.querySelector("#project-close-btn");
     
     const tl = gsap.timeline({ paused: true, overwrite: "auto" });
     tl.to(overlay, {
