@@ -24,6 +24,7 @@ h1 {
 
 h2 {
   font-size: 22px;
+  padding-bottom: 2em
 }
 
 h3 {
@@ -106,7 +107,7 @@ a {
 
 .item {
   display: flex;
-  padding: 0 1em;
+  padding: 1em 0;
   cursor: pointer;
 }
 
