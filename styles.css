@@ -39,7 +39,7 @@ a {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 4em;
 }
 
 .menu {
