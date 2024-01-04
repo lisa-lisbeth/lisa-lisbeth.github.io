@@ -9,7 +9,9 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  font-family: "Aeonik";
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   background: #0f0f0f;
   color: #fff;
 }
