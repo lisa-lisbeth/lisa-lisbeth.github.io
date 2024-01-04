@@ -44,7 +44,7 @@ a {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 2.5em;
 }
 
 .menu {
@@ -56,18 +56,19 @@ a {
 
 .about {
   display: flex;
-  flex-direction: space-between;
+  justify-content: space-between;
   width: 100%;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
+  width: 75%;
 }
 
 .about-img {
-  width: 25%;
-  height: auto;
+  height: 400px;
+  width: auto;
 }
 
 .footer {
