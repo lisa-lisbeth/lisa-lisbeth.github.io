@@ -235,5 +235,13 @@ img {
     .items {
       bottom: 4em;
     }
+
+    .item-details {
+      padding: 1em 0;
+    }
+
+    .overlay-header {
+      padding: 1em 0;
+    }
 }
 
