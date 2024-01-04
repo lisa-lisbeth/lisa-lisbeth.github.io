@@ -21,6 +21,7 @@ h1 {
   font-family: "prestige-elite-std", monospace;
   font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 .portfolio-h1 {
@@ -28,6 +29,7 @@ h1 {
   font-family: "prestige-elite-std", monospace;
 font-weight: 700;
 font-style: normal;
+text-transform: uppercase;
 }
 
 h2 {
@@ -272,7 +274,7 @@ img {
     }
 
     .items {
-      bottom: 3.5em;
+      bottom: 3em;
     }
 
     .item-details {
