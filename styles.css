@@ -212,4 +212,15 @@ img {
   .item-index {
     display: none;
   }
+
+  .footer {
+    padding: 1em 2em;
+  }
 }
+
+  @media (max-width: 576px) {
+    .items {
+      bottom: 4em;
+    }
+}
+
