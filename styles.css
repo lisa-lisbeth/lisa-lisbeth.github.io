@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-family: "prestige-elite-std", monospace;
   font-weight: 700;
   font-style: normal;
@@ -269,6 +269,10 @@ img {
     /* p {
       font-size: 14px;
     } */
+
+    h3 {
+      font-size: 20px;
+    }
 
     .footer a {
       font-size: 12px;
