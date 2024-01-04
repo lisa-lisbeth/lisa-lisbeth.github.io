@@ -107,6 +107,7 @@ i {
 .about {
   display: flex;
   justify-content: space-between;
+  gap: 2em;
   width: 100%;
 }
 
