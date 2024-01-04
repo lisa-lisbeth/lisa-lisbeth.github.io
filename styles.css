@@ -174,7 +174,7 @@ img {
 @media (max-width: 900px) {
   .items {
     width: 100%;
-    bottom: 4em;
+    bottom: 8em;
   }
 
   .overlay {
