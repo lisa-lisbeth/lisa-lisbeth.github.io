@@ -18,8 +18,33 @@ body {
 }
 
 h1 {
-  font-weight: 500;
+  font-size: 22px;
+  font-family: "burnaby-stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 20px;
   margin-bottom: 0.5em;
+  font-family: "burnaby-stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h2-projekte {
+  padding-left: 1em;
+}
+
+p {
+  font-size: 16px;
+}
+
+.portfolio {
+  font-size: 22px;
+  font-family: "burnaby-stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -41,7 +66,7 @@ a {
 .nav {
   position: fixed;
   width: 100%;
-  padding: 2em;
+  padding: 2em 3em;
   display: flex;
   justify-content: space-between;
 }
