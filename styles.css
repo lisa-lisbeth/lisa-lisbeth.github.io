@@ -243,5 +243,17 @@ img {
     .overlay-header {
       padding: 1em 0;
     }
+
+    .container {
+      padding: 1.25em;
+    }
+
+    .nav {
+      padding: 1.25em;
+    }
+
+    .overlay {
+      padding: 1.25em;
+    }
 }
 
