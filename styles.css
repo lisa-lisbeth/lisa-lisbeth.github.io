@@ -55,7 +55,7 @@ a {
 }
 
 .footer a {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #item-link {
@@ -246,6 +246,14 @@ img {
 }
 
   @media (max-width: 576px) {
+    /* p {
+      font-size: 14px;
+    } */
+
+    .footer a {
+      font-size: 12px;
+    }
+
     .items {
       bottom: 4em;
     }
