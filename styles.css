@@ -51,8 +51,18 @@ a {
 
 .about {
   display: flex;
-  flex-direction: column;
+  flex-direction: space-between;
   width: 50%;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  width: 50%;
+  height: auto;
 }
 
 .footer {
