@@ -44,11 +44,14 @@ a {
 
 .menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
 
