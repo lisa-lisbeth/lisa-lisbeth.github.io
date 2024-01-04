@@ -189,4 +189,12 @@ img {
   .about-img {
     display: none;
   }
+
+  .item-name {
+    flex: 2;
+  }
+
+  .item-index {
+    display: none;
+  }
 }
