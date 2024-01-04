@@ -68,7 +68,7 @@ a {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  gap: 2.5em;
+  gap: 4em;
 }
 
 .menu {
@@ -196,6 +196,10 @@ img {
 }
 
 @media (max-width: 900px) {
+  .nav {
+    gap: 2.5em;
+  }
+
   .items {
     width: 100%;
     bottom: 8em;
