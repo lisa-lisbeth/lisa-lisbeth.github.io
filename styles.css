@@ -24,7 +24,7 @@ h1 {
 
 h2 {
   font-size: 22px;
-  padding-bottom: 2em
+  padding-bottom: 0.5em
 }
 
 h3 {
@@ -46,6 +46,10 @@ a {
 
 #item-link {
   color: #000;
+}
+
+.mail-link {
+  padding-top: 0.25em;
 }
 
 
@@ -107,7 +111,7 @@ a {
 
 .item {
   display: flex;
-  padding: 1em 0;
+  padding: 0.25em 0;
   cursor: pointer;
 }
 
