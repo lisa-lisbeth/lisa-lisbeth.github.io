@@ -265,8 +265,14 @@ img {
       font-size: 20px;
     }
 
+
     .footer a {
       font-size: 12px;
+    }
+
+
+    .footer {
+      padding: 1.25em;
     }
 
     .items {
