@@ -50,6 +50,10 @@
     font-size: 14px;
   }
 
+  .datenschutz a {
+    text-decoration: underline;
+  }
+
   .datenschutz {
     padding: 2em 0;
   }
