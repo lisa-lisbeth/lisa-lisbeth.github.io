@@ -17,7 +17,7 @@ const data = [
     itemName: "Rabbit Radio",
     itemCategory: "Webdesign",
     itemLink: "https://rabbitradio.de/",
-    itemCopy: "Konzept und Realisierung des Webauftritt-Relaunchs für das Campusradio Rabbit Radio im Rahmen meiner Bachelorarbeit.",
+    itemCopy: "Konzeption und Umsetzung des Relaunches der Website für das Campusradio Rabbit Radio im Rahmen meiner Bachelorarbeit mit WordPress und dem Oxygen Page Builder.",
     itemImg: "./rabbit-radio-mockup-min.png",
   },
   {
