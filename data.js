@@ -23,7 +23,7 @@ const data = [
   {
     itemName: "App Design",
     itemCategory: "UI/UX",
-    itemLink: "https://xd.adobe.com/view/72a3965e-694a-4708-865b-8a63b8a6f71d-27f0/screen/f0852cc4-a9f8-4165-becf-753f35930306/",
+    itemLink: "https://www.figma.com/proto/SKwZZMvqbp4C1idgu4YTXx/de(v)initly_app?page-id=0%3A1&type=design&node-id=37-330&viewport=616%2C75%2C0.13&t=O1l8Ed3h73ngbPue-1&scaling=scale-down",
     itemCopy: "Im Rahmen einer Studienarbeit wurde ein Prototyp in Axure und das Design in Figma für eine E-Learning-App erstellt.",
     itemImg: "./e-learning-app.png",
   },
