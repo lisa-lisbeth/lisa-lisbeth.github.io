@@ -51,7 +51,11 @@
   }
 
   .datenschutz {
-    padding: 2em;
+    padding: 2em 0;
+  }
+
+  .bildquellen {
+    padding-top: 2em;
   }
   
   a {
