@@ -46,6 +46,10 @@
     font-size: 16px;
     letter-spacing: 0.5px;
   }
+
+  .datenschutz p {
+    font-size: 14px;
+  }
   
   a {
     text-decoration: none;
