@@ -22,13 +22,13 @@ body {
 h1 {
   font-size: 22px;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .portfolio-h1 {
   font-size: 22px;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h2 {
