@@ -31,7 +31,7 @@ const data = [
     itemName: "E-Publikation",
     itemCategory: "Grafikdesign",
     itemLink: "https://indd.adobe.com/view/fed56b75-3a64-4d06-81b5-82e799640dff",
-    itemCopy: "Erstellung einer interaktiven E-Publikation mit InDesign im Rahmen einer Studienarbeit.",
+    itemCopy: "Erstellung einer interaktiven E-Publikation zu den 17 Sustainable Development Goals und der Rede von Greta Thunberg mit InDesign im Rahmen einer Studienarbeit.",
     itemImg: "./e-pub-min.png",
   },
   {
