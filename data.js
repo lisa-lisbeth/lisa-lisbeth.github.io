@@ -24,7 +24,7 @@ const data = [
     itemName: "App Design",
     itemCategory: "UI/UX",
     itemLink: "https://www.figma.com/proto/SKwZZMvqbp4C1idgu4YTXx/de(v)initly_app?page-id=0%3A1&type=design&node-id=37-330&viewport=616%2C75%2C0.13&t=O1l8Ed3h73ngbPue-1&scaling=scale-down",
-    itemCopy: "Im Rahmen einer Studienarbeit wurde ein Prototyp in Axure und das Design in Figma für eine E-Learning-App erstellt.",
+    itemCopy: "Studienarbeit in Interactive Design. Die Aufgabe bestand darin, eine E-Learning-Applikation zu entwerfen, einen Prototyp in Axure zu erstellen und das Design in Figma oder XD umzusetzen. In diesem Rahmen habe ich eine App zum Erlernen von Programmiersprachen mit Artikeln und Videokursen konzipiert und gestaltet.",
     itemImg: "./e-learning-app-min.png",
   },
   {
