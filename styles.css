@@ -299,7 +299,9 @@ img {
 
     .overlay {
       padding: 1.25em;
-      /* padding-top: 6em; */
+      padding-top: 3em;
+      height: 100vh !important;
+      z-index: 3;
     }
 }
 
