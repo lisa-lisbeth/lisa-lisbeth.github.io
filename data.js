@@ -35,6 +35,13 @@ const data = [
     itemImg: "./e-pub-min.png",
   },
   {
+    itemName: "Animationsvideo",
+    itemCategory: "Grafikdesign",
+    itemLink: "/contentPaket_animiertesVideo.mp4",
+    itemCopy: "Zusätzlich zu der E-Publikation wurde im Rahmen dieser Studienarbeit ein Social Media Paket im Form eines 2D-Animationsvideos zum Thema Zigarettenmüll erstellt. Das Video wurde mit den Programmen Adobe Animate und Illustrator erstellt.",
+    itemImg: "./animationsvideo-min.png",
+  },
+  {
     itemName: "Flamingo und Dosenbier",
     itemCategory: "Webdesign",
     itemLink: "https://flamingo-und-dosenbier.de/",
