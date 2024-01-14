@@ -37,7 +37,7 @@ const data = [
   {
     itemName: "Animationsvideo",
     itemCategory: "Grafikdesign",
-    itemLink: "/contentPaket_animiertesVideo.mp4",
+    itemLink: "https://lisa-lisbeth.github.io/contentPaket_animiertesVideo.mp4",
     itemCopy: "Zusätzlich zu der E-Publikation wurde im Rahmen dieser Studienarbeit ein Social Media Paket im Form eines 2D-Animationsvideos zum Thema Zigarettenmüll erstellt. Das Video wurde mit den Programmen Adobe Animate und Illustrator erstellt.",
     itemImg: "./animationsvideo-min.png",
   },
